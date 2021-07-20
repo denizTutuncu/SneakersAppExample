@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GoatExampleApp: App {
+    
+    let viewModel = ShoeListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(model: viewModel)
         }
     }
 }

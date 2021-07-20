@@ -7,31 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1C6ABC2573140E007020C8 /* SneakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C6ABB2573140E007020C8 /* SneakerViewModel.swift */; };
+		2E1C6ACD2579F80D007020C8 /* ResultCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C6ACC2579F80D007020C8 /* ResultCategoryListView.swift */; };
+		2E1C6AD02579F824007020C8 /* ResultCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C6ACF2579F824007020C8 /* ResultCategoryCell.swift */; };
+		2E66D8DB256D983E004BDC94 /* ResultCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66D8DA256D983E004BDC94 /* ResultCategory.swift */; };
 		2E932DF92540AB4F00FD7DB1 /* GoatExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932DF82540AB4F00FD7DB1 /* GoatExampleApp.swift */; };
 		2E932DFB2540AB4F00FD7DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932DFA2540AB4F00FD7DB1 /* ContentView.swift */; };
 		2E932DFD2540AB5600FD7DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E932DFC2540AB5600FD7DB1 /* Assets.xcassets */; };
 		2E932E002540AB5600FD7DB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E932DFF2540AB5600FD7DB1 /* Preview Assets.xcassets */; };
-		2E932E0D2540ABF000FD7DB1 /* ShoePhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932E0C2540ABF000FD7DB1 /* ShoePhotoListView.swift */; };
-		2E932E112540AC2E00FD7DB1 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932E102540AC2E00FD7DB1 /* Shoe.swift */; };
-		2E932E152540AD5500FD7DB1 /* ShoeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932E142540AD5500FD7DB1 /* ShoeViewModel.swift */; };
-		2E932E1F2540B3F000FD7DB1 /* ShoeReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932E1E2540B3F000FD7DB1 /* ShoeReleaseView.swift */; };
-		2E932E262540B90800FD7DB1 /* ShoeAdvancedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932E252540B90800FD7DB1 /* ShoeAdvancedDetailView.swift */; };
-		2E932E2D2540D90C00FD7DB1 /* ShoeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932E2C2540D90C00FD7DB1 /* ShoeDetailView.swift */; };
+		2E932E112540AC2E00FD7DB1 /* TopLevelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E932E102540AC2E00FD7DB1 /* TopLevelJSON.swift */; };
+		2E964B7D256C875F00CD16CB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E964B7C256C875F00CD16CB /* API.swift */; };
+		2E964B8B256C8D3F00CD16CB /* ShoeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E964B8A256C8D3F00CD16CB /* ShoeListViewModel.swift */; };
+		2EA1F5B3256CB07600EABB1D /* ShoeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1F5B2256CB07600EABB1D /* ShoeCellView.swift */; };
+		2EA1F5B8256CC43900EABB1D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1F5B7256CC43900EABB1D /* ImageLoader.swift */; };
+		2EA1F5BC256CC46100EABB1D /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1F5BB256CC46100EABB1D /* URLImage.swift */; };
+		2EA1F5C4256CF34D00EABB1D /* ShoeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1F5C3256CF34D00EABB1D /* ShoeDetailView.swift */; };
+		2EA1F5C7256CF3AC00EABB1D /* ShoePhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1F5C6256CF3AC00EABB1D /* ShoePhotoListView.swift */; };
+		2EA1F5CA256CF47500EABB1D /* ShoeReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1F5C9256CF47500EABB1D /* ShoeReleaseView.swift */; };
+		2EA1F5CD256CF4C300EABB1D /* ShoeAdvancedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1F5CC256CF4C300EABB1D /* ShoeAdvancedDetailView.swift */; };
+		2EA1F5D2256CF62900EABB1D /* ShoeMainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1F5D1256CF62900EABB1D /* ShoeMainDetailView.swift */; };
+		2ECB2D0E256F45D80079CD88 /* ShowAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECB2D0D256F45D80079CD88 /* ShowAllView.swift */; };
+		2EE49CEF2611D0D3003189DC /* LoadingSneakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE49CEE2611D0D3003189DC /* LoadingSneakersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E1C6ABB2573140E007020C8 /* SneakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerViewModel.swift; sourceTree = "<group>"; };
+		2E1C6ACC2579F80D007020C8 /* ResultCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCategoryListView.swift; sourceTree = "<group>"; };
+		2E1C6ACF2579F824007020C8 /* ResultCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCategoryCell.swift; sourceTree = "<group>"; };
+		2E66D8DA256D983E004BDC94 /* ResultCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCategory.swift; sourceTree = "<group>"; };
 		2E932DF52540AB4E00FD7DB1 /* GoatExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoatExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E932DF82540AB4F00FD7DB1 /* GoatExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatExampleApp.swift; sourceTree = "<group>"; };
 		2E932DFA2540AB4F00FD7DB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E932DFC2540AB5600FD7DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E932DFF2540AB5600FD7DB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2E932E012540AB5600FD7DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E932E0C2540ABF000FD7DB1 /* ShoePhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoePhotoListView.swift; sourceTree = "<group>"; };
-		2E932E102540AC2E00FD7DB1 /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
-		2E932E142540AD5500FD7DB1 /* ShoeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeViewModel.swift; sourceTree = "<group>"; };
-		2E932E1E2540B3F000FD7DB1 /* ShoeReleaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeReleaseView.swift; sourceTree = "<group>"; };
-		2E932E252540B90800FD7DB1 /* ShoeAdvancedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeAdvancedDetailView.swift; sourceTree = "<group>"; };
-		2E932E2C2540D90C00FD7DB1 /* ShoeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDetailView.swift; sourceTree = "<group>"; };
+		2E932E102540AC2E00FD7DB1 /* TopLevelJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelJSON.swift; sourceTree = "<group>"; };
+		2E964B7C256C875F00CD16CB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2E964B8A256C8D3F00CD16CB /* ShoeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeListViewModel.swift; sourceTree = "<group>"; };
+		2EA1F5B2256CB07600EABB1D /* ShoeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCellView.swift; sourceTree = "<group>"; };
+		2EA1F5B7256CC43900EABB1D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		2EA1F5BB256CC46100EABB1D /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		2EA1F5C3256CF34D00EABB1D /* ShoeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDetailView.swift; sourceTree = "<group>"; };
+		2EA1F5C6256CF3AC00EABB1D /* ShoePhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoePhotoListView.swift; sourceTree = "<group>"; };
+		2EA1F5C9256CF47500EABB1D /* ShoeReleaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeReleaseView.swift; sourceTree = "<group>"; };
+		2EA1F5CC256CF4C300EABB1D /* ShoeAdvancedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeAdvancedDetailView.swift; sourceTree = "<group>"; };
+		2EA1F5D1256CF62900EABB1D /* ShoeMainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeMainDetailView.swift; sourceTree = "<group>"; };
+		2ECB2D0D256F45D80079CD88 /* ShowAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllView.swift; sourceTree = "<group>"; };
+		2EE49CEE2611D0D3003189DC /* LoadingSneakersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSneakersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +86,8 @@
 		2E932DF72540AB4E00FD7DB1 /* GoatExample */ = {
 			isa = PBXGroup;
 			children = (
-				2E932E192540B04100FD7DB1 /* Extensions */,
+				2EA1F5BA256CC43D00EABB1D /* ImageLoader */,
+				2E964B7B256C874D00CD16CB /* Services */,
 				2E932E132540AD4D00FD7DB1 /* ViewModels */,
 				2E932E0F2540AC2400FD7DB1 /* Models */,
 				2E932E092540AB7B00FD7DB1 /* Views */,
@@ -96,10 +119,17 @@
 			isa = PBXGroup;
 			children = (
 				2E932DFA2540AB4F00FD7DB1 /* ContentView.swift */,
-				2E932E0C2540ABF000FD7DB1 /* ShoePhotoListView.swift */,
-				2E932E1E2540B3F000FD7DB1 /* ShoeReleaseView.swift */,
-				2E932E252540B90800FD7DB1 /* ShoeAdvancedDetailView.swift */,
-				2E932E2C2540D90C00FD7DB1 /* ShoeDetailView.swift */,
+				2E1C6ACC2579F80D007020C8 /* ResultCategoryListView.swift */,
+				2E1C6ACF2579F824007020C8 /* ResultCategoryCell.swift */,
+				2EA1F5B2256CB07600EABB1D /* ShoeCellView.swift */,
+				2EA1F5D1256CF62900EABB1D /* ShoeMainDetailView.swift */,
+				2EA1F5C3256CF34D00EABB1D /* ShoeDetailView.swift */,
+				2EA1F5C6256CF3AC00EABB1D /* ShoePhotoListView.swift */,
+				2EA1F5C9256CF47500EABB1D /* ShoeReleaseView.swift */,
+				2EA1F5CC256CF4C300EABB1D /* ShoeAdvancedDetailView.swift */,
+				2ECB2D0D256F45D80079CD88 /* ShowAllView.swift */,
+				2EA1F5BB256CC46100EABB1D /* URLImage.swift */,
+				2EE49CEE2611D0D3003189DC /* LoadingSneakersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,7 +137,8 @@
 		2E932E0F2540AC2400FD7DB1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2E932E102540AC2E00FD7DB1 /* Shoe.swift */,
+				2E932E102540AC2E00FD7DB1 /* TopLevelJSON.swift */,
+				2E66D8DA256D983E004BDC94 /* ResultCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,16 +146,26 @@
 		2E932E132540AD4D00FD7DB1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				2E932E142540AD5500FD7DB1 /* ShoeViewModel.swift */,
+				2E964B8A256C8D3F00CD16CB /* ShoeListViewModel.swift */,
+				2E1C6ABB2573140E007020C8 /* SneakerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		2E932E192540B04100FD7DB1 /* Extensions */ = {
+		2E964B7B256C874D00CD16CB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2E964B7C256C875F00CD16CB /* API.swift */,
 			);
-			path = Extensions;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2EA1F5BA256CC43D00EABB1D /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1F5B7256CC43900EABB1D /* ImageLoader.swift */,
+			);
+			path = ImageLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,14 +237,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E932E112540AC2E00FD7DB1 /* Shoe.swift in Sources */,
-				2E932E1F2540B3F000FD7DB1 /* ShoeReleaseView.swift in Sources */,
-				2E932E152540AD5500FD7DB1 /* ShoeViewModel.swift in Sources */,
+				2EA1F5CD256CF4C300EABB1D /* ShoeAdvancedDetailView.swift in Sources */,
+				2E932E112540AC2E00FD7DB1 /* TopLevelJSON.swift in Sources */,
+				2EA1F5C7256CF3AC00EABB1D /* ShoePhotoListView.swift in Sources */,
+				2EA1F5D2256CF62900EABB1D /* ShoeMainDetailView.swift in Sources */,
+				2E1C6ABC2573140E007020C8 /* SneakerViewModel.swift in Sources */,
+				2EA1F5B3256CB07600EABB1D /* ShoeCellView.swift in Sources */,
+				2ECB2D0E256F45D80079CD88 /* ShowAllView.swift in Sources */,
+				2EA1F5B8256CC43900EABB1D /* ImageLoader.swift in Sources */,
+				2EE49CEF2611D0D3003189DC /* LoadingSneakersView.swift in Sources */,
+				2E964B8B256C8D3F00CD16CB /* ShoeListViewModel.swift in Sources */,
 				2E932DFB2540AB4F00FD7DB1 /* ContentView.swift in Sources */,
-				2E932E262540B90800FD7DB1 /* ShoeAdvancedDetailView.swift in Sources */,
-				2E932E2D2540D90C00FD7DB1 /* ShoeDetailView.swift in Sources */,
-				2E932E0D2540ABF000FD7DB1 /* ShoePhotoListView.swift in Sources */,
+				2EA1F5C4256CF34D00EABB1D /* ShoeDetailView.swift in Sources */,
+				2E964B7D256C875F00CD16CB /* API.swift in Sources */,
+				2E1C6ACD2579F80D007020C8 /* ResultCategoryListView.swift in Sources */,
 				2E932DF92540AB4F00FD7DB1 /* GoatExampleApp.swift in Sources */,
+				2E66D8DB256D983E004BDC94 /* ResultCategory.swift in Sources */,
+				2EA1F5BC256CC46100EABB1D /* URLImage.swift in Sources */,
+				2E1C6AD02579F824007020C8 /* ResultCategoryCell.swift in Sources */,
+				2EA1F5CA256CF47500EABB1D /* ShoeReleaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.GoatExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -366,7 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.GoatExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
