@@ -23,10 +23,10 @@ struct ContentView: View {
         
         return NavigationView {
             VStack {
-                ResultCategoryListView(showAll: $showAll, sneakerBrand: $sneakerBrand, screenSize: screenSize, resultCategories: model.resultCategories)
+                SneakerCategoryListView(showAll: $showAll, sneakerBrand: $sneakerBrand, screenSize: screenSize, resultCategories: model.resultCategories)
             }
             .sheet(isPresented: $showAll, content: {
-                ShowAllView(model: model, sneakerBrand: self.$sneakerBrand)
+                ShowAllSneakersView(model: model, sneakerBrand: self.$sneakerBrand)
             })
             .alert(item: self.$model.error) { error in
                 Alert(

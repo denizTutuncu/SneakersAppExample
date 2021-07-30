@@ -7,13 +7,13 @@
 
 import Foundation
 
-extension ResultCategory: Equatable {
-    static func == (lhs: ResultCategory, rhs: ResultCategory) -> Bool {
+extension SneakerCategory: Equatable {
+    static func == (lhs: SneakerCategory, rhs: SneakerCategory) -> Bool {
         return lhs.id == rhs.id
     }
 }
 
-class ResultCategory: Identifiable {
+class SneakerCategory: Identifiable {
     var id: String
     var title: String
     var sneakers: [SneakerViewModel]

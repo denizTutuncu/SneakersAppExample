@@ -19,8 +19,16 @@ class SneakerViewModel {
         return result.id ?? "No Sneaker ID"
     }
     
+    var sku: String {
+        return result.sku ?? "No Sneaker SKU"
+    }
+    
     var brand: String {
         return result.brand ?? "No Sneaker Brand"
+    }
+    
+    var name: String {
+        return result.name ?? "No Sneaker Name"
     }
     
     var colorway: String {
@@ -31,35 +39,35 @@ class SneakerViewModel {
         return result.gender ?? "No Sneaker Gender"
     }
     
-    var name: String {
-        return result.name ?? "No Sneaker Name"
+    var silhouette: String {
+        return result.silhouette ?? "No Sneaker silhouette"
     }
     
     var releaseDate: String {
         return result.releaseDate ?? "No Sneaker ReleaseDate"
     }
     
-    var retailPrice: String {
-        return "\(result.retailPrice ?? 0)"
+    var story: String {
+        return result.story ?? "No Sneaker story"
     }
     
-    var shoe: String {
-        return result.shoe ?? "No Sneaker shoe"
+    var releaseYear: Int {
+        return result.releaseYear ?? 0000
     }
     
-    var styleID: String {
-        return result.styleID ?? "No Sneaker styleID"
+    var retailPrice: Int {
+        return result.retailPrice ?? 0000
     }
     
-    var title: String {
-        return result.title ?? "No Sneaker Title"
+    var estimatedMarketValue: String {
+        return "\(result.estimatedMarketValue ?? 0000)"
     }
     
-    var year: String {
-        return "\(result.year ?? 0)"
+    var image: ResultImage {
+        return result.image ?? ResultImage(id: "", original: "", small: "", thumbnail: "")
     }
     
-    var media: Media {
-        return result.media ?? Media(id: "", imageURL: "", smallImageURL: "", thumbURL: "")
+    var links: Links {
+        return result.links ?? Links(id: "", stockx: "", goat: "", flightClub: "")
     }
 }

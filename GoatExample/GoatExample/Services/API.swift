@@ -28,7 +28,7 @@ struct API {
     
     /// API endpoints.
     enum EndPoint {
-        static let baseURL = URL(string: "https://api.thesneakerdatabase.com/v1")!
+        static let baseURL = URL(string: "https://the-sneaker-database.p.rapidapi.com")!
         
         case results
         case nextPage(String, String)
@@ -45,7 +45,12 @@ struct API {
                 
                 guard let componentsUrl = urlCompenents?.url else { return URLRequest(url: URL(string: "")!) }
                 var request = URLRequest(url: componentsUrl)
+                
                 request.httpMethod = "GET"
+                request.allHTTPHeaderFields = [
+                    "x-rapidapi-key": APIConstants.key,
+                    "x-rapidapi-host": APIConstants.host
+                ]
                 return request
                 
             case .nextPage(let page, let brand):
@@ -59,8 +64,12 @@ struct API {
                 
                 guard let componentsUrl = urlCompenents?.url else { return URLRequest(url: URL(string: "")!) }
                 var request = URLRequest(url: componentsUrl)
-                request.httpMethod = "GET"
                 
+                request.httpMethod = "GET"
+                request.allHTTPHeaderFields = [
+                    "x-rapidapi-key": APIConstants.key,
+                    "x-rapidapi-host": APIConstants.host
+                ]
                 return request
                 
             case .shoeID(let id):
@@ -68,7 +77,12 @@ struct API {
                 let urlCompenents = URLComponents(url: endPoint, resolvingAgainstBaseURL: true)
                 guard let componentsUrl = urlCompenents?.url else { return URLRequest(url: URL(string: "")!) }
                 var request = URLRequest(url: componentsUrl)
+                
                 request.httpMethod = "GET"
+                request.allHTTPHeaderFields = [
+                    "x-rapidapi-key": APIConstants.key,
+                    "x-rapidapi-host": APIConstants.host
+                ]
                 return request
             }
         }

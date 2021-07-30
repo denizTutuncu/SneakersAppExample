@@ -15,20 +15,20 @@ class ShoeListViewModel: ObservableObject {
     private var subscriptions = Set<AnyCancellable>()
     
     @Published private var allSneakers = [SneakerViewModel]()
-    @Published private var allResultCategories = [ResultCategory]()
+    @Published private var allResultCategories = [SneakerCategory]()
     @Published var error: API.Error? = nil
     
     var sneakers: [SneakerViewModel] {
         return self.allSneakers
     }
     
-    var resultCategories: [ResultCategory] {
+    var resultCategories: [SneakerCategory] {
         return self.allResultCategories
     }
     
-    private func createCategories(results: [Result]) -> [ResultCategory] {
+    private func createCategories(results: [Result]) -> [SneakerCategory] {
         
-        var returnResultCategories = [ResultCategory]()
+        var returnResultCategories = [SneakerCategory]()
         let dict = Dictionary(grouping: results, by: { (result: Result) in
             return result.brand
         })
@@ -36,7 +36,7 @@ class ShoeListViewModel: ObservableObject {
         for key in dict.keys {
             if let key = key, let results = dict[key] {
                 let vm = results.map(SneakerViewModel.init)
-                let category = ResultCategory(title: key, sneakers: vm)
+                let category = SneakerCategory(title: key, sneakers: vm)
                 returnResultCategories.append(category)
             }
         }

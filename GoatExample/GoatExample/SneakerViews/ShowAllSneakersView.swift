@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct ShowAllView: View {
+struct ShowAllSneakersView: View {
     
     @ObservedObject var model: ShoeListViewModel
     @Binding var sneakerBrand: String
+    @State private var searchText = ""
     private let gridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
     
     init(model: ShoeListViewModel, sneakerBrand: Binding<String>) {
@@ -19,44 +20,60 @@ struct ShowAllView: View {
     }
     
     var body: some View {
-        
+        let screenSize = UIScreen.main.bounds.size
         NavigationView {
             ScrollView {
+                SearchBarView(text: $searchText)
+                    .padding()
                 LazyVGrid(columns: gridItemLayout, alignment: .center, spacing: 8, content: {
-                    ForEach(model.sneakers, id: \.id) { sneaker in
-                        NavigationLink(destination: ShoeMainDetailView(shoe: sneaker)) {
+                    ForEach(model.sneakers.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) }) , id: \.id) { sneaker in
+                        NavigationLink(destination: SneakerMainDetailView(shoe: sneaker)) {
                             
                             VStack {
                                 
+                                HStack {
+                                    Text("\(sneaker.releaseYear.description)")
+                                        .font(.footnote)
+                                        .foregroundColor(.primary)
+                                        .multilineTextAlignment(.center)
+                                        .lineLimit(1)
+                                        .minimumScaleFactor(0.5)
+                                    Spacer()
+                                    
+                                    
+                                    Text(sneaker.gender)
+                                        .font(.footnote)
+                                        .foregroundColor(.primary)
+                                        .multilineTextAlignment(.center)
+                                        .lineLimit(1)
+                                        .minimumScaleFactor(0.5)
+                                }
+                                
                                 VStack(alignment: .center) {
-                                    URLImage(url: sneaker.media.imageURL ??  sneaker.media.thumbURL ??  sneaker.media.smallImageURL ?? "")
+                                    URLImage(url: sneaker.image.original ??  sneaker.image.small ??  sneaker.image.thumbnail ?? "")
                                         .aspectRatio(contentMode: .fit)
                                 }
                                 
                                 VStack(alignment: .center) {
                                     
-                                    Text("\(sneaker.shoe)")
+                                    Text("\(sneaker.name)")
+                                        .font(.callout)
+                                        .foregroundColor(.primary)
+                                        .multilineTextAlignment(.center)
+                                        .lineLimit(nil)
+                                        .minimumScaleFactor(0.5)
+                                    
+                                    Text("$\(sneaker.retailPrice)")
                                         .font(.title2)
                                         .foregroundColor(.primary)
                                         .multilineTextAlignment(.center)
-                                        .lineLimit(nil)
-                                        .minimumScaleFactor(0.5)
-                                    
-                                    Text("\(sneaker.name)")
-                                        .font(.title3)
-                                        .foregroundColor(.primary)
-                                        .multilineTextAlignment(.center)
-                                        .lineLimit(nil)
-                                        .minimumScaleFactor(0.5)
-                                    
-                                    Text("\(sneaker.releaseDate)")
-                                        .font(.footnote)
-                                        .foregroundColor(.primary)
                                         .lineLimit(1)
                                         .minimumScaleFactor(0.5)
                                 }
                             }
                             .padding()
+                            .frame(width: screenSize.width / 2, height: screenSize.height / 3, alignment: .center)
+                            .border(Color.gray, width: 0.2)
                         }.buttonStyle(PlainButtonStyle())
                         .navigationBarTitle("All \(sneaker.brand) Sneakers", displayMode: .inline)
                     }
@@ -77,6 +94,6 @@ struct ShowAllView_Previews: PreviewProvider {
     @State static var sneakerBrand  = "Nike"
     
     static var previews: some View {
-        ShowAllView(model: ShoeListViewModel(), sneakerBrand: $sneakerBrand)
+        ShowAllSneakersView(model: ShoeListViewModel(), sneakerBrand: $sneakerBrand)
     }
 }
